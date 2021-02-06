@@ -13,7 +13,7 @@ public:
 	void DeclarDumpFile(std::string dmpFileName = "");
 
 private:
-    static long /*__stdcall*/ UnhandleExceptionFilter(_EXCEPTION_POINTERS* ExceptionInfo);
+    static long __stdcall UnhandleExceptionFilter(_EXCEPTION_POINTERS* ExceptionInfo);
 
 private:
 	static std::string    strDumpFile;
